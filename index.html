@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="left"> 
+        <label>HTML</label>
+        <textarea id="html-code" onkeyup="run()"></textarea>
+
+        <label>CSS</label>
+        <textarea id="Css-code" onkeyup="run()"></textarea>
+
+        <label>JS</label>
+        <textarea id="Js-code" onkeyup="run()"></textarea>
+    </div>
+    <div class="right">
+        <iframe id="output"></iframe>
+    </div>
+</div>
+
+<script> 
+function run(){
+let htmlcode = document.getElementById("html-code").value;
+let csscode = document.getElementById("Css-code").value;
+let jscode = document.getElementById("Js-code").value;
+let output = document.getElementById("output");
+
+output.contentDocument.body.innerHTML = htmlcode + "<style>"+ csscode + "<style>";
+output.contentWindow.eval(jscode);
+}
+</script>
+</body>
+</html> 
