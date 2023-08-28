@@ -1,22 +1,57 @@
 *{
     margin : 0;
     padding :0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
+   
 }
 body{
-    background-color: #454545;
-  
+    background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+    height: 100%;
     }
+.home-button{
+    margin-top: 15px;
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.home-button:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+  }
+  
+  @media (min-width: 768px) {
+    .home-button {
+      padding: 10px 30px;
+    }
+  }
 .container{
+    margin-top: 36px;
     width: 100%;
-    height: 100vh;
-    padding: 20px;
+    height: 95vh;
+    padding: 10px;
     display: flex;
 }
 .left, .right{
     flex-basis: 50%;
-    padding: 10px;
+    padding: 15px;
 }
 textarea{
     width :100%;
@@ -36,3 +71,12 @@ iframe{
     outline: 0;
     
 }
+.icon{
+    height: 25px;
+    
+}
+.text{
+    padding :5px;
+}
+
+
