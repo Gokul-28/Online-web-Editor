@@ -9,3 +9,9 @@ function run(){
     output.contentDocument.body.innerHTML = htmlcode + "<style>"+ csscode + "<style>";
     output.contentWindow.eval(jscode);
     }
+
+const goToHomePage = document.getElementById('goToHomePage');
+
+goToHomePage.addEventListener('click', () => {
+  window.location.href = 'index.html';
+});

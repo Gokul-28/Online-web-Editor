@@ -1,82 +1,110 @@
-*{
-    margin : 0;
-    padding :0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    overflow: hidden;
-   
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-body{
-    background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
-    height: 100%;
-    }
+/* Backgroung color and Body styling */
+body {
+  background: linear-gradient(
+    180.2deg,
+    rgb(30, 33, 48) 6.8%,
+    rgb(74, 98, 110) 131%
+  );
+  height: 100%;
+}
+
+/* Header Tag styling  */
+header {
+  
+  position: absolute;
+display: flex;
+  margin-left: 10px;
+  margin-top: 25PX;
+}
 .home-button{
-    margin-top: 15px;
-    background-color: #13aa52;
-    border: 1px solid #13aa52;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    outline: none;
-    outline: 0;
-    padding: 10px 25px;
+    margin-left: 16px;
+}
+.topic{
+    font-size: larger;
     text-align: center;
-    transform: translateY(0);
-    transition: transform 150ms, box-shadow 150ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    margin-left: 500PX;
+
+}
+/* Return to Home button - Button styling  */
+.home-button {
+  justify-content: right;
+  margin-right: 50px;
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 .home-button:hover {
-    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
-    transform: translateY(-2px);
-  }
-  
-  @media (min-width: 768px) {
-    .home-button {
-      padding: 10px 30px;
-    }
-  }
-.container{
-    margin-top: 36px;
-    width: 100%;
-    height: 95vh;
-    padding: 10px;
-    display: flex;
-}
-.left, .right{
-    flex-basis: 50%;
-    padding: 15px;
-}
-textarea{
-    width :100%;
-    height: 28%;
-    background: #1f1f1f;
-    color: #fff;
-    padding : 10px 20px;
-    border: 0;
-    outline: 0;
-    font-size: 18px;
-}
-iframe{
-    width:100%;
-    height: 95%;
-    background: #fff;
-    border: 0;
-    outline: 0;
-    
-}
-.icon{
-    height: 25px;
-    
-}
-.text{
-    padding :5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
 }
 
+@media (min-width: 768px) {
+  .home-button {
+    padding: 10px 30px;
+  }
+}
 
+/* The Code container  */
+
+.container {
+    margin-top: 55px;
+  width: 100%;
+  height: 95vh;
+  padding: 10px;
+  display: flex;
+}
+
+/* Coding area alignment area  */
+.left,
+.right {
+  flex-basis: 50%;
+  padding: 15px;
+}
+textarea {
+  width: 100%;
+  height: 28%;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+}
+iframe {
+  width: 100%;
+  height: 95%;
+  background: #fff;
+  border: 0;
+  outline: 0;
+}
+
+/* Display icon styling  */
+.icon {
+  height: 25px;
+}
+.text {
+  padding: 5px;
+}
