@@ -2,8 +2,7 @@
 * {
     margin: 0px;
     box-sizing: border-box;
-
-
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -14,10 +13,11 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 50px;
-    background-color: salmon;
+    text-align: center;
+    height: 60px;
+    background-color:rgb(55, 182, 55);
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: green;
+    color: rgb(7, 221, 7);
     font-size: large;
 
 }
@@ -76,7 +76,11 @@ nav ul li a:hover {
   }
 
 
-
+.project-button{
+  
+  margin-top: 25px;
+ 
+}
 
 
 
@@ -86,7 +90,7 @@ nav ul li a:hover {
   background-color: #c2fbd7;
   border-radius: 100px;
   box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
+  color: rgb(7, 221, 7);
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -101,9 +105,34 @@ nav ul li a:hover {
   touch-action: manipulation;
   padding : auto;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .project-btn:hover {
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
+}
+/*  */
+.floating-image {
+  position: relative;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.intro-para{
+  /* font-family: 'Roboto', sans-serif; */
+  
+}
+
+.linkedin-link {
+  text-decoration: none;
+  color: black; 
 }

@@ -5,21 +5,32 @@
     <!-- facvicon and CSS section  -->
     <link rel="icon" type="image/x-icon" href="/Resources/favicon.png" />
     <link rel="stylesheet" href="index.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  
+  .linkedin-link {
+    text-decoration: none; 
+    color: black; 
+  }
+</style>
+</head>
 
   <body>
     <!-- Navigation Area -->
     <header>
       <nav>
-        <div class="left">Online Editor</div>
-        <div class="class">
+        <div class="left"> <h3 align ="center">Online Code Editor </h3></div>
+        <!-- <div class="class">
           <ul>
             <li><a href="/">View Website</a></li>
             <li><a href="/">View other projects</a></li>
             <li><a href="/">Contact</a></li>
             <br />
           </ul>
-        </div>
+        </div> -->
       </nav>
     </header>
     <!-- End of Navigation Area -->
@@ -29,7 +40,7 @@
       <div class="container">
         <!-- Left side of the home page -->
         <div class="left">
-          <p>
+          <p class="intro-para">
             Welcome to my interactive coding playground! With this website, you
             can experiment with HTML, CSS, and JavaScript code, witnessing your
             creations come to life in real-time while enjoying immediate
@@ -38,13 +49,19 @@
 
           <div class="project-button">
             <button class="project-btn" id="goToSecondPage">
-              Click to view project
+              Explore project <i class="fab fa-font-awesome fa-spin"></i>
             </button>
+            <button class="project-btn" id="goToSecondPage"> 
+              <a class="linkedin-link" href="https://www.linkedin.com/in/gokuls28/" target="_blank">View linkedin profile <i class="fab fa-linkedin"></i></a>
+              
+
+            </button>
+            
           </div>
         </div>
         <!--Right side of the home page -->
         <div class="right">
-          <img src="/Resources/background image.png" alt="Right-side Image" />
+          <img src="/Resources/background image.png" alt="Right-side Image" class="floating-image"/>
         </div>
       </div>
     </main>
